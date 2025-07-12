@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+
+<header class="py-3 shadow bg-dark text-white">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="h2 name mb-0">Aryan Desai</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-circle-half-stroke" id="Theme"></i>
+        </div>
+    </div>
+</header>
+
+<div class="container mb-5">
+    <section class="hero-sec w-100 d-flex flex-column flex-md-row justify-content-between align-items-center position-relative overflow-hidden" style="animation: fadeIn 2s ease-in-out;">
+        <div class="name-side w-100 w-md-50 d-flex flex-column align-items-start position-relative z-2">
+            <h1 class="fw-bold mb-2 hero-hi" style="animation: slideInLeft 1.5s ease-in-out;">Hello,</h1>
+            <div class="d-flex gap-3 mb-2">
+                <h1 class="fw-bold hero-im" style="animation: slideInLeft 1.5s ease-in-out; animation-delay: 0.2s;">I'm</h1>
+                <h1 class="fw-bolder text-primary hero-name" style="animation: slideInLeft 1.5s ease-in-out; animation-delay: 0.4s;">Aryan</h1>
+            </div>
+            <h3 class="fw-bold mb-4 hero-role" style="animation: slideInLeft 1.5s ease-in-out; animation-delay: 0.6s;">
+                <span class="typewriter"></span>
+            </h3>
+            <button class="btn btn-primary w-50 w-md-25 mt-3 hero-contact-btn shadow-lg" style="animation: bounceIn 2s ease-in-out; animation-delay: 0.8s;">
+                <i class="fas fa-paper-plane me-2"></i>Contact Me
+            </button>
+        </div>
+        <div class="img-side img-size img-fluid position-relative z-2 mt-4 mt-md-0" style="animation: zoomIn 2s ease-in-out;">
+            <div class="hero-img-wrapper position-relative">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_liaA3Lrm4N_HW2bV6xjZ_0QT-yshftH8Pf0tSt4fVJhQ=s900-c-k-c0x00ffffff-no-rj"
+                    alt="Aryan Desai" height="400px"
+                    class="rounded-4 shadow-lg hero-img"
+                    style="transition: transform 0.4s cubic-bezier(.25,.8,.25,1), box-shadow 0.4s;">
+                <span class="hero-img-glow"></span>
+            </div>
+        </div>
+        <!-- Decorative background shapes -->
+        <span class="hero-bg-circle position-absolute top-0 start-0 translate-middle"></span>
+        <span class="hero-bg-circle2 position-absolute bottom-0 end-0 translate-middle"></span>
+    </section>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<section id="about" class="py-5 mt-5 shadow" style="opacity: 0; transform: translateY(50px);">
+    <div class="container">
+        <h2 class="text-center mb-4 text-primary fw-bold" style="transition: opacity 1s ease-in-out, transform 1s ease-in-out; text-decoration: underline;">About Me</h2>
+        <p class="text-center text-silver" style="transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+            I am Aryan Desai, a passionate web designer with a knack for creating visually appealing and user-friendly websites. With a strong foundation in front-end technologies and a creative mindset, I strive to deliver exceptional digital experiences.
+        </p>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="about-item p-4 shadow rounded bg-white text-dark" style="opacity: 0; transform: translateY(50px); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+                    <h4 class="text-primary">My Mission</h4>
+                    <p >To craft innovative and responsive web designs that meet client needs and exceed expectations.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about-item p-4 shadow rounded bg-white text-dark" style="opacity: 0; transform: translateY(50px); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+                    <h4 class="text-primary">My Vision</h4>
+                    <p>To become a leading web designer known for creativity, quality, and attention to detail.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="skills" class="py-5" style="opacity: 0; transform: translateY(50px);">
+    <div class="container pb-5">
+        <h2 class="text-center mb-4 text-primary fw-bold" style="opacity: 1; transform: translateY(0); transition: opacity 1s ease-in-out, transform 1s ease-in-out; text-decoration: underline;">Front-end Skills</h2> 
+        <p class="text-center text-silver" style="opacity: 1; transform: translateY(0); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">Here are some of the technologies and tools I excel at:</p>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="skill-item p-4 shadow rounded" style="opacity: 0; transform: scale(0.9); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+                    <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                    <h4>HTML</h4>
+                    <p>Proficient in creating semantic and accessible web pages using HTML5.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="skill-item p-4 shadow rounded" style="opacity: 0; transform: scale(0.9); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+                    <i class="fas fa-paint-brush fa-3x text-success mb-3"></i>
+                    <h4>CSS</h4>
+                    <p>Experienced in designing responsive and visually appealing layouts with CSS3.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="skill-item p-4 shadow rounded" style="opacity: 0; transform: scale(0.9); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+                    <i class="fas fa-laptop-code fa-3x text-warning mb-3"></i>
+                    <h4>JavaScript</h4>
+                    <p>Skilled in adding interactivity and dynamic functionality to web pages.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 text-center">
+                <div class="skill-item p-4 shadow rounded" style="opacity: 0; transform: scale(0.9); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+                    <i class="fab fa-bootstrap fa-3x text-purple mb-3"></i>
+                    <h4>Bootstrap</h4>
+                    <p>Expert in building responsive designs quickly using Bootstrap framework.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="skill-item p-4 shadow rounded" style="opacity: 0; transform: scale(0.9); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+                    <i class="fab fa-js-square fa-3x text-info mb-3"></i>
+                    <h4>jQuery</h4>
+                    <p>Proficient in simplifying JavaScript tasks and animations using jQuery.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="skill-item p-4 shadow rounded" style="opacity: 0; transform: scale(0.9); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+                    <i class="fab fa-figma fa-3x text-danger mb-3"></i>
+                    <h4>Figma</h4>
+                    <p>Experienced in designing user interfaces and prototypes using Figma.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow py-3 pb-5">
+        <div class="container mt-5">
+            <h2 class="text-center mb-4 text-primary fw-bold" style="opacity: 1; transform: translateY(0); transition: opacity 1s ease-in-out, transform 1s ease-in-out; text-decoration: underline;">Back-end Skills</h2> 
+            <p class="text-center text-silver" style="opacity: 1; transform: translateY(0); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">Here are some of the technologies and tools I excel at:</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-4 text-center">
+                <div class="skill-item p-4 shadow rounded" style="opacity: 0; transform: scale(0.9); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+                    <i class="fab fa-python fa-3x text-blue mb-3"></i>
+                    <h4>Python</h4>
+                    <p>Experienced in building robust and scalable applications using Python.</p>
+                </div>
+                </div>
+                <div class="col-md-4 text-center">
+                <div class="skill-item p-4 shadow rounded" style="opacity: 0; transform: scale(0.9); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+                    <i class="fas fa-server fa-3x text-green mb-3"></i>
+                    <h4>Django</h4>
+                    <p>Proficient in developing secure and efficient web applications using Django framework.</p>
+                </div>
+                </div>
+                <div class="col-md-4 text-center">
+                <div class="skill-item p-4 shadow rounded" style="opacity: 0; transform: scale(0.9); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+                    <i class="fas fa-database fa-3x text-orange mb-3"></i>
+                    <h4>MongoDB</h4>
+                    <p>Skilled in managing and querying NoSQL databases using MongoDB.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section id="contact" class="py-5" style="opacity: 0; transform: translateY(50px);">
+    <div class="container">
+        <h2 class="text-center mb-4 text-primary fw-bold" style="transition: opacity 1s ease-in-out, transform 1s ease-in-out; text-decoration: underline;">Contact Me</h2>
+        <p class="text-center text-silver" style="transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+            Feel free to reach out to me for any inquiries or collaborations. I'd love to hear from you!
+        </p>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="contact-info p-4 shadow rounded  bg-white text-dark" style="opacity: 0; transform: translateY(50px); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+                    <h4 class="text-primary">Get in Touch</h4>
+                    <p><i class="fas fa-envelope text-primary"></i> Email: aryandesai9199@gmail.com</p>
+                    <p><i class="fas fa-phone text-primary"></i> Phone: +91 63 5329 3566</p>
+                    <p><i class="fas fa-map-marker-alt text-primary"></i> Location: Mehsana, India</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form class="p-4 shadow rounded  bg-white text-dark" style="opacity: 0; transform: translateY(50px); transition: opacity 1s ease-in-out, transform 1s ease-in-out;">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="py-5 bg-dark text-white">
+    <div class="container text-center">
+        <h4 class="mb-3">Connect with Me</h4>
+        <div class="d-flex justify-content-center gap-4 mb-4">
+            <a href="https://github.com" target="_blank" class="text-white" style="text-decoration: none;">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="text-white" style="text-decoration: none;">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="text-white" style="text-decoration: none;">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="text-white" style="text-decoration: none;">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+        </div>
+        <p class="mb-0">© 2025 Aryan Desai. All Rights Reserved.</p>
+        <p class="small">Designed with ❤️ by Aryan Desai</p>
+        <!-- <p class="mt-3">"Dream big, work hard, and make it happen."</p> -->
+    </div>
+</footer>
+
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const aboutSection = document.querySelector('#about');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    aboutSection.style.opacity = '1';
+                    aboutSection.style.transform = 'translateY(0)';
+                    aboutSection.querySelectorAll('.about-item').forEach((item, index) => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                        item.style.transitionDelay = `${index * 0.2}s`;
+                    });
+                    observer.unobserve(aboutSection);
+                }
+            });
+        }, { threshold: 0.1 });
+        observer.observe(aboutSection);
+    });
+</script>
+<script>
+// Typewriter effect for role
+document.addEventListener('DOMContentLoaded', function() {
+    const roles = [
+        "Front-end Developer",
+        "Back-end Developer",
+        "Full Stack Developer",
+    ];
+    const typewriter = document.querySelector('.typewriter');
+    let roleIdx = 0, charIdx = 0, isDeleting = false;
+
+    function type() {
+        const current = roles[roleIdx];
+        if (!isDeleting) {
+            typewriter.textContent = current.substring(0, charIdx + 1);
+            charIdx++;
+            if (charIdx === current.length) {
+                isDeleting = true;
+                setTimeout(type, 1200);
+            } else {
+                setTimeout(type, 90);
+            }
+        } else {
+            typewriter.textContent = current.substring(0, charIdx - 1);
+            charIdx--;
+            if (charIdx === 0) {
+                isDeleting = false;
+                roleIdx = (roleIdx + 1) % roles.length;
+                setTimeout(type, 400);
+            } else {
+                setTimeout(type, 40);
+            }
+        }
+    }
+    if (typewriter) type();
+});
+
+// Smooth scroll to contact section on button click
+document.querySelector('.hero-contact-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+});
+</script>
+
+<script>
+    function animateOnScroll(element) {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const container = entry.target;
+                    container.style.opacity = '1';
+                    container.style.transform = 'translateY(0)';
+                    container.querySelectorAll('.skill-item').forEach((item, index) => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                        item.style.transitionDelay = `${index * 0.2}s`;
+                    });
+                    observer.unobserve(container);
+                }
+            });
+        }, { threshold: 0.1 });
+        observer.observe(element);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const skillsSection = document.querySelector('#skills');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const container = entry.target;
+                    container.style.opacity = '1';
+                    container.style.transform = 'translateY(0)';
+                    container.querySelectorAll('.skill-item').forEach((item, index) => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                        item.style.transitionDelay = `${index * 0.2}s`;
+                    });
+                    observer.unobserve(container);
+                }
+            });
+        }, { threshold: 0.1 });
+        observer.observe(skillsSection);
+    });
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const contactSection = document.querySelector('#contact');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    contactSection.style.opacity = '1';
+                    contactSection.style.transform = 'translateY(0)';
+                    contactSection.querySelectorAll('.contact-info, form, .social-link, .map-container').forEach((item, index) => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                        item.style.transitionDelay = `${index * 0.2}s`;
+                    });
+                    observer.unobserve(contactSection);
+                }
+            });
+        }, { threshold: 0.1 });
+        observer.observe(contactSection);
+    });
+</script>
+
+<script>
+    document.getElementById('Theme').addEventListener('click', () => {
+        const body = document.body;
+        const header = document.querySelector('header');
+        const footer = document.querySelector('footer');
+        const navLinks = document.querySelectorAll('header ul.nav li a');
+        const headerText = document.querySelector('header h1');
+
+        if (body.classList.contains('bg-dark')) {
+            // Switch to light theme
+            body.classList.remove('bg-dark', 'text-white');
+            body.classList.add('bg-light', 'text-dark');
+            header.classList.remove('bg-dark', 'text-white');
+            header.classList.add('bg-white', 'text-dark');
+            footer.classList.remove('bg-dark', 'text-white');
+            footer.classList.add('bg-white', 'text-dark');
+            navLinks.forEach(link => {
+                link.classList.remove('text-white');
+                link.classList.add('text-dark');
+            });
+            headerText.style.color = 'black';
+        } else {
+            // Switch back to dark theme
+            body.classList.remove('bg-light', 'text-dark');
+            body.classList.add('bg-dark', 'text-white');
+            header.classList.remove('bg-white', 'text-dark');
+            header.classList.add('bg-dark', 'text-white');
+            footer.classList.remove('bg-white', 'text-dark');
+            footer.classList.add('bg-dark', 'text-white');
+            navLinks.forEach(link => {
+                link.classList.remove('text-dark');
+                link.classList.add('text-white');
+            });
+            headerText.style.color = 'white';
+        }
+    });
+</script>
+
+
+    <script src="JS/bootstrap.bundle.js"></script>
+</body>
+</html>

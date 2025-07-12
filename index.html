@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="py-3 bg-m-dark">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="m-0">Aryan Desai</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="py-5 bg-dark text-white wlcm-sec">
+        <section id="home" class="container text-center my-5">
+            <h2 class="animate-fade-in">Welcome to My Portfolio</h2>
+            <p class="lead animate-fade-in">Hi, I'm Aryan Desai, a passionate web developer. Explore my work and get to know me better!</p>
+            <img src="https://www.elections.in/political-leaders/images/amit-shah.jpg" alt="Aryan Desai" class="img-fluid rounded-circle mt-4 animate-fade-in" style="max-width: 100%; height: 250px; width: 250px;">
+        </section>
+    </main>
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 animate-fade-in">My Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <div class="skill-card p-4 border rounded animate-slide-up"></div>
+                        <h3>HTML</h3>
+                        <p>Expert in creating semantic and accessible web pages.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="skill-card p-4 border rounded animate-slide-up"></div>
+                        <h3>CSS</h3>
+                        <p>Proficient in designing responsive and visually appealing layouts.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="skill-card p-4 border rounded animate-slide-up"></div>
+                        <h3>JavaScript</h3>
+                        <p>Skilled in adding interactivity and dynamic features to websites.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .animate-fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .animate-slide-up {
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
