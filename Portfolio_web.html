@@ -12,54 +12,66 @@
 <body>
 
 <header class="py-3 shadow bg-dark text-white">
-    <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-            <h1 class="h2 name mb-0">Aryan Desai</h1>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <i class="fa-solid fa-circle-half-stroke" id="Theme"></i>
-        </div>
-    </div>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <h1 class="navbar-brand h2 mb-0">Aryan Desai</h1>
+
+      <!-- Toggler for small screens -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible navbar -->
+      <div class="collapse navbar-collapse flex-lg-row flex-column align-items-center text-center" id="navbarNav">
+        <ul class="navbar-nav ms-auto ms-lg-auto d-flex flex-column flex-lg-row align-items-center gap-2 gap-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!-- Theme icon spacing for both views -->
+        <i class="fa-solid fa-circle-half-stroke mt-3 mt-lg-0 ms-lg-3" id="Theme"></i>
+      </div>
+    </nav>
+  </div>
 </header>
+
 
 <div class="container mb-5">
     <section class="hero-sec w-100 d-flex flex-column flex-md-row justify-content-between align-items-center position-relative overflow-hidden" style="animation: fadeIn 2s ease-in-out;">
-        <div class="name-side w-100 w-md-50 d-flex flex-column align-items-start position-relative z-2">
+        <div class="name-side flex-grow-1 d-flex flex-column align-items-start position-relative z-2 text-center text-md-start mb-4 mb-md-0">
             <h1 class="fw-bold mb-2 hero-hi" style="animation: slideInLeft 1.5s ease-in-out;">Hello,</h1>
-            <div class="d-flex gap-3 mb-2">
+            <div class="d-flex flex-column flex-sm-row gap-2 gap-sm-3 mb-2 justify-content-center justify-content-md-start align-items-center align-items-md-baseline">
                 <h1 class="fw-bold hero-im" style="animation: slideInLeft 1.5s ease-in-out; animation-delay: 0.2s;">I'm</h1>
                 <h1 class="fw-bolder text-primary hero-name" style="animation: slideInLeft 1.5s ease-in-out; animation-delay: 0.4s;">Aryan</h1>
             </div>
             <h3 class="fw-bold mb-4 hero-role" style="animation: slideInLeft 1.5s ease-in-out; animation-delay: 0.6s;">
                 <span class="typewriter"></span>
             </h3>
-            <button class="btn btn-primary w-50 w-md-25 mt-3 hero-contact-btn shadow-lg" style="animation: bounceIn 2s ease-in-out; animation-delay: 0.8s;">
-                <i class="fas fa-paper-plane me-2"></i>Contact Me
-            </button>
+            <div class="w-100 d-flex justify-content-center justify-content-md-start">
+                <button class="btn btn-primary hero-contact-btn shadow-lg mt-3"
+                    style="animation: bounceIn 2s ease-in-out; animation-delay: 0.8s; width: 100%; max-width: 250px;">
+                    <i class="fas fa-paper-plane me-2"></i>Contact Me
+                </button>
+            </div>
         </div>
-        <div class="img-side img-size img-fluid position-relative z-2 mt-4 mt-md-0" style="animation: zoomIn 2s ease-in-out;">
-            <div class="hero-img-wrapper position-relative">
+        <div class="img-side flex-grow-1 d-flex justify-content-center align-items-center position-relative z-2 mt-4 mt-md-0">
+            <div class="hero-img-wrapper position-relative" style="max-width: 320px; width: 100%;">
                 <img src="https://yt3.googleusercontent.com/ytc/AIdro_liaA3Lrm4N_HW2bV6xjZ_0QT-yshftH8Pf0tSt4fVJhQ=s900-c-k-c0x00ffffff-no-rj"
-                    alt="Aryan Desai" height="400px"
-                    class="rounded-4 shadow-lg hero-img"
-                    style="transition: transform 0.4s cubic-bezier(.25,.8,.25,1), box-shadow 0.4s;">
+                    alt="Aryan Desai"
+                    class="rounded-4 shadow-lg hero-img img-fluid w-100"
+                    style="max-height: 400px; object-fit: cover; transition: transform 0.4s cubic-bezier(.25,.8,.25,1), box-shadow 0.4s;">
                 <span class="hero-img-glow"></span>
             </div>
         </div>
@@ -69,7 +81,8 @@
     </section>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 
 
 
@@ -246,7 +259,7 @@
 
 
 
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const aboutSection = document.querySelector('#about');
@@ -417,5 +430,7 @@ document.querySelector('.hero-contact-btn').addEventListener('click', function(e
 
 
     <script src="JS/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
